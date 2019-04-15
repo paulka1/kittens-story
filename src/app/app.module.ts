@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { ListKittensComponent } from './list-kittens/list-kittens.component';
+import { AdoptKittensComponent } from './adopt-kittens/adopt-kittens.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormulaireComponent,
+    ListKittensComponent,
+    AdoptKittensComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
