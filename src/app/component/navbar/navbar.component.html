@@ -1,0 +1,39 @@
+<div class="main">
+
+  <!--Home page with Links to the other page-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+        
+    <a class="navbar-brand" href="#"><img [routerLink]= "['/home']" src="../../assets/pictures/pawprint.png">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      
+      <ul class="navbar-nav mx-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]= "['/home']">Home<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]= "['/form']">Create your kittens</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]= "['/list-kittens']">List-Kittens</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" [routerLink] = "['/adopt-kittens']"> My adoption</a>
+        </li>
+      
+      </ul>
+    
+    </div>
+
+  </nav>
+
+</div>

@@ -1,0 +1,26 @@
+nav {
+    background-color: #e6ffff;
+
+    .nav-item{
+        padding: 0 40px;
+
+        .nav-link {
+            font-size: 1vw;
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+nav {
+
+    .nav-item{
+        padding: 0 40px;
+
+        .nav-link {
+            font-size: 3vw;
+            
+        }
+    }
+  }
+}
