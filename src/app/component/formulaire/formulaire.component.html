@@ -1,5 +1,4 @@
-<!--  Menu NavBar -->
-<app-navbar></app-navbar>
+
 
 
 <!--FORMS CREATE KITTENS-->
@@ -12,27 +11,70 @@
 
     <div class="form-group">
       <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" required>
+      <input 
+      class="form-control" 
+      id="name" 
+      name='nameKitten'
+      [(ngModel)]="nameKitten" 
+      required
+      type="text" 
+      >
     </div>
 
     <div class="form-group">
       <label for="alterEgo">Race</label>
-      <input type="text" class="form-control" id="race">
+      <input       
+      class="form-control" 
+      id="race"
+      name='raceKitten'
+      [(ngModel)]="raceKitten" 
+      type="text" 
+      >
     </div>
 
     <div class="form-group">
         <label for="alterEgo">Born</label>
-        <input type="text" class="form-control" id="born">
+        <input       
+        class="form-control" 
+        id="born"
+        name='bornKitten'
+        [(ngModel)]="bornKitten" 
+        type="text" 
+        >
     </div>
 
     <div class="form-group">
         <label for="alterEgo">Photo</label>
-        <input type="text" class="form-control" id="photo">
+        <input      
+        class="form-control" 
+        id="photo"
+        name='photoKitten'
+        [(ngModel)]="photoKitten" 
+        type="text" 
+        >
     </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button 
+    class="btn btn-success" 
+    (click)='addKitten()'
+    type="submit" 
+    >
+    Submit
+  </button>
 
   </form>
+ 
+ <!--ILLUSTRATION PICTURES-->
+
+  <div class="pictureContainer">
+
+    <div class="pict1">
+      <img src='../../assets/pictures/black-cat-round.png' id="black_cat" alt='black cat'>
+      <img src='../../assets/pictures/black-cat-run.png' id="black_cat_running" alt='black cat running'>
+    </div>
+
+  </div>
+
 </div>
 
-<app-footer></app-footer>
+

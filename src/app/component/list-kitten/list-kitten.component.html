@@ -1,0 +1,18 @@
+<div class="main">
+
+<!--CARD FOR CAT PRESENTATION-->
+
+    <div *ngFor="let cat of listKitten" class="card" style="width: 18rem;">
+
+        <img class="card-img-top" src={{cat.photo}} alt="Card image cap">
+        <div class="card-body">
+            <h3 class="card-title">{{cat.name}}</h3>
+            <h5 class="card-text">{{cat.race}}</h5>
+            <h5 class="card-text">{{cat.born}}</h5>
+
+            <a href="#" class="btn btn-primary" (click)="addToAdopt">Adopt Me</a>
+        </div>
+
+        </div>
+  
+</div>
