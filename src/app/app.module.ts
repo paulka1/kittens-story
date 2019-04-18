@@ -13,6 +13,7 @@ import { ListKittensComponent } from './pages/list-kittens/list-kittens.componen
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { ListKittenComponent } from './component/list-kitten/list-kitten.component';
+import { AdoptListComponent } from './component/adopt-list/adopt-list.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ListKittenComponent } from './component/list-kitten/list-kitten.compone
     ListKittensComponent,
     NavbarComponent,
     ListKittenComponent,
+    AdoptListComponent,
   ],
   imports: [
     AppRoutingModule,
