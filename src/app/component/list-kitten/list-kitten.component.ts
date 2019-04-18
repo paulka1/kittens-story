@@ -17,13 +17,12 @@ export class ListKittenComponent implements OnInit {
     this.listKitten = this.service.tableKitten
   }
 
-  addToAdopt(cat) {
+  addToAdopt(cat,i) {
     /*MOVE THE CAT CARD TO ADOPTION PAGE WITH THE SERVICE*/
     this.service.listToAdopt(cat);
 
     /*REMOVE THE SELECT CARD*/ 
-    this.listKitten.pop(cat);
+    this.listKitten.splice(i,1);
   }
-
 
 }
