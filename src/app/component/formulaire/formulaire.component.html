@@ -58,7 +58,8 @@
     <button 
     class="btn button" 
     (click)='addKitten()'
-    type="submit" 
+    type="submit"
+    [disabled] = 'condition'
     >
     Submit
   </button>

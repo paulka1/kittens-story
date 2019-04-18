@@ -10,7 +10,6 @@ import { ListToAdoptService } from 'src/app/services/list-to-adopt.service';
 })
 export class FormulaireComponent implements OnInit {
 
-
   nameKitten: string;
   raceKitten: string;
   bornKitten: string;
@@ -19,11 +18,11 @@ export class FormulaireComponent implements OnInit {
 
 
   constructor(private service: ListToAdoptService) { }
-  
 
   ngOnInit() {
 
     }
+  
 addKitten() {
 
   /*Creation of object cat*/ 
