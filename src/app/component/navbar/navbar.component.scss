@@ -1,8 +1,9 @@
+@import "../../../styles/colors.scss";
+
 .main {
-    font-family: 'Dosis', sans-serif;
 
     .navbar{
-        background-color:  #e6ffff;
+        background-color: $mainColor;
         
         img {
             width: 50px;

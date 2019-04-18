@@ -1,5 +1,7 @@
+@import '../../../styles/colors.scss';
+
 nav {
-    background-color: #e6ffff;
+    background-color: $mainColor;
     position: fixed;
     bottom: 0;
     width: 100%;
