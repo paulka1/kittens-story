@@ -1,0 +1,19 @@
+@import '../../../styles/colors.scss';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        background-color: $sndColor;
+        margin: 15px;
+        text-align: center;
+        box-shadow: 3px 3px;
+
+        button {
+            background-color: $mainColor;
+            color: black;
+        }
+    }
+}

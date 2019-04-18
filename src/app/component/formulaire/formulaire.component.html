@@ -1,6 +1,4 @@
 
-
-
 <!--FORMS CREATE KITTENS-->
 
 <div class="container">
@@ -28,6 +26,7 @@
       id="race"
       name='raceKitten'
       [(ngModel)]="raceKitten" 
+      required
       type="text" 
       >
     </div>
@@ -39,6 +38,7 @@
         id="born"
         name='bornKitten'
         [(ngModel)]="bornKitten" 
+        required
         type="text" 
         >
     </div>
@@ -50,12 +50,13 @@
         id="photo"
         name='photoKitten'
         [(ngModel)]="photoKitten" 
+        required
         type="text" 
         >
     </div>
 
     <button 
-    class="btn btn-success" 
+    class="btn button" 
     (click)='addKitten()'
     type="submit" 
     >

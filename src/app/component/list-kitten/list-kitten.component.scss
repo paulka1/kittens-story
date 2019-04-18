@@ -7,12 +7,25 @@
 
     .card {
         background-color: $sndColor;
+        border-radius: 6px;
+        box-shadow: 3px 3px 3px;
         margin: 15px;
         text-align: center;
 
+        &:hover {
+
+            box-shadow: 10px 10px 5px black;
+        }
+
         button {
             background-color: $mainColor;
+            border-radius: 5px;
+            box-shadow: -2px -2px;
             color: black;
+
+            &:hover {
+                box-shadow: 10px 10px 5px black;
+            }
         }
     }
 }
