@@ -10,10 +10,10 @@ import { ListToAdoptService } from 'src/app/services/list-to-adopt.service';
 })
 export class FormulaireComponent implements OnInit {
 
-  nameKitten: string;
-  raceKitten: string;
-  bornKitten: string;
-  photoKitten: string;
+  nameKittenText: string;
+  raceKittenText : string;
+  bornKittenText: string;
+  photoKittenText: string;
   cat: Chat;
 
 
@@ -27,20 +27,20 @@ addKitten() {
 
   /*Creation of object cat*/ 
   this.cat = {
-    name: this.nameKitten,
-    race: this.raceKitten,
-    born: this.bornKitten,
-    photo: this.photoKitten
+    name: this.nameKittenText,
+    race: this.raceKittenText,
+    born: this.bornKittenText,
+    photo: this.photoKittenText
   };
 
   /*Push the cat's object in a table with list-to-adopt Service*/ 
   this.service.formToService(this.cat) 
 
   /*Reset the Form Empty*/ 
-  this.nameKitten = '';
-  this.raceKitten = '';
-  this.bornKitten = '';
-  this.photoKitten = '';
+  this.nameKittenText = '';
+  this.raceKittenText = '';
+  this.bornKittenText = '';
+  this.photoKittenText = '';
 }
 
   }

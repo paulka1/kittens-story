@@ -5,7 +5,7 @@
 
   <h1>Create your kittens</h1>
 
-  <form>
+  <form name="kittenForm" #kittenForm=ngForm>
 
     <div class="form-group">
       <label for="name">Name</label>
@@ -13,43 +13,51 @@
       class="form-control" 
       id="name" 
       name='nameKitten'
-      [(ngModel)]="nameKitten" 
+      [(ngModel)]="nameKittenText" 
       required
+      #nameKitten="ngModel"
+      [class.is-invalid]="nameKitten.invalid && nameKitten.touched"
       type="text" 
       >
     </div>
 
     <div class="form-group">
-      <label for="alterEgo">Race</label>
+      <label for="race">Race</label>
       <input       
       class="form-control" 
       id="race"
       name='raceKitten'
-      [(ngModel)]="raceKitten" 
+      [(ngModel)]="raceKittenText" 
       required
+      #raceKitten="ngModel"
+      [class.is-invalid]="raceKitten.invalid && raceKitten.touched"
       type="text" 
       >
     </div>
 
     <div class="form-group">
-        <label for="alterEgo">Born</label>
+        <label for="born">Born</label>
         <input       
         class="form-control" 
         id="born"
         name='bornKitten'
-        [(ngModel)]="bornKitten" 
+        [(ngModel)]="bornKittenText" 
         required
+        #bornKitten="ngModel"
+        [class.is-invalid]="bornKitten.invalid && bornKitten.touched"
         type="text" 
         >
     </div>
 
     <div class="form-group">
-        <label for="alterEgo">Photo</label>
+        <label for="photo">Photo</label>
         <input      
         class="form-control" 
         id="photo"
         name='photoKitten'
-        [(ngModel)]="photoKitten" 
+        [(ngModel)]="photoKittenText"
+        #photoKitten="ngModel"
+        [class.is-invalid]="photoKitten.invalid && photoKitten.touched" 
         required
         type="text" 
         >
@@ -59,7 +67,7 @@
     class="btn button" 
     (click)='addKitten()'
     type="submit"
-    [disabled] = 'condition'
+    [disabled]=!kittenForm.valid
     >
     Submit
   </button>

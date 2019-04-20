@@ -5,6 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    height: 79vh;
 
     .card {
         background-color: $sndColor;
@@ -12,6 +13,7 @@
         box-shadow: 3px 3px 30px;
         margin: 15px;
         text-align: center;
+        height: 50vh;
 
         &:hover {
 
