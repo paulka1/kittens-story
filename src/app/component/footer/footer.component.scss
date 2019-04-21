@@ -1,30 +1,50 @@
 @import '../../../styles/colors.scss';
 
-nav {
-    background-color: $mainColor;
-    bottom: 0;
-    width: 100%;
+.main {
 
-    .nav-item{
-        padding: 0 40px;
-
-        .nav-link {
-            font-size: 1vw;
-            
+    .pict1 {
+        display: flex;
+        justify-content: space-around;
+        #black_cat {
+            width: 50px;
+            height: 70px;
+            }
+        #black_cat_running {
+            width: 50px;
+            height: 70px;
         }
     }
-}
+
+    nav {
+        background-color: $mainColor;
+        bottom: 0;
+        width: 100%;
+
+        .nav-item{
+            padding: 0 40px;
+
+            .nav-link {
+                font-size: 1vw;
+                
+            }
+        }
+    }
+
+}    
 
 @media only screen and (max-width: 900px) {
-nav {
+.main {    
+    
+    nav {
 
-    .nav-item{
-        padding: 0 40px;
+        .nav-item{
+            padding: 0 40px;
 
-        .nav-link {
-            font-size: 3vw;
-            
+            .nav-link {
+                font-size: 3vw;
+                
+            }
         }
     }
-  }
-}
+    }
+}   

@@ -9,7 +9,7 @@ import { ListToAdoptService } from 'src/app/services/list-to-adopt.service';
 })
 export class ListKittenComponent implements OnInit {
   
-  listKitten;
+  listKitten;   /* Table to contain the created cat from the formPage */
 
   constructor(private service: ListToAdoptService) { }
 
